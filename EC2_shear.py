@@ -24,6 +24,7 @@ def main():
     HA = st.number_input("Diametro barre (HA) [-]", min_value=0.0, step=0.1, value=3.0)
     A_s = n_barre * 3.14 * HA**2 / 4
     st.latex(r"A_s = n_{barre} \times HA^2 ")
+    st.latex(f"A_s = {n_barre} \\,  \\, \\times \\, {HA:.1f} \\, \\text{{cm}} = {A:.1f} \\, \\text{{cm}}^2")
 
 
 
