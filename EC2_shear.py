@@ -19,8 +19,8 @@ def main():
         st.latex(r"A = b \times h ")
 
     with col2:
-    st.markdown("**Formula numerica**")
-    st.latex(f"A = {b:.1f} \\, \\text{{cm}} \\, \\times \\, {h:.1f} \\, \\text{{cm}} = {A:.1f} \\, \\text{{cm}}^2")
+        st.markdown("**Formula numerica**")
+        st.latex(f"A = {b:.1f} \\, \\text{{cm}} \\, \\times \\, {h:.1f} \\, \\text{{cm}} = {A:.1f} \\, \\text{{cm}}^2")
 
 if __name__ == "__main__":
     main()
