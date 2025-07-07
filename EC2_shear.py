@@ -25,7 +25,7 @@ def main():
     HA = st.number_input("Diametro barre (HA) [mm]", min_value=0.0, step=0.1, value=3.0)
     A_s = n_barre * (math.pi * HA**2) / (4 * 100)
     st.latex(r"A_s = n_{barre} \cdot \frac{\pi \cdot \phi^2}{4 \cdot 100}")
-    st.latex(f"A_s = {n_barre} \\cdot \\frac{{\\pi \\cdot {HA:.0f}^2}}{{4 \\cdot 100}}")
+    st.latex(f"A_s = {n_barre} \\cdot \\frac{{\\pi \\cdot {HA:.1f}^2}}{{4 \\cdot 100}}")
 
 
 
