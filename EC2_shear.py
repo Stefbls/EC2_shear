@@ -21,7 +21,7 @@ def main():
         st.latex(f"A = {b:.1f} \\, \\text{{cm}} \\, \\times \\, {h:.1f} \\, \\text{{cm}} = {A:.1f} \\, \\text{{cm}}^2")
     
     c = st.number_input("Copriferro (c) [cm]", min_value=0.0, step=0.1, value=3.0)
-    n_barre = st.number_input("Numero di barre tese (n_barre) [-]", min_value=1, step=1, value=3.0)
+    n_barre = st.number_input("Numero di barre tese (n_barre) [-]", min_value=1, step=0.1, value=3.0)
     HA = st.number_input("Diametro barre (HA) [mm]", min_value=0.0, step=0.1, value=3.0)
     A_s = n_barre * (math.pi * HA**2) / (4 * 100)
     st.latex(r"A_s = n_{barre} \cdot \frac{\pi \cdot \phi^2}{4 \cdot 100}")
