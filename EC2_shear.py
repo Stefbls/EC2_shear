@@ -1,5 +1,6 @@
 import streamlit as st
 import numpy as np
+import math
 
 
 
@@ -22,7 +23,7 @@ def main():
     c = st.number_input("Copriferro (c) [cm]", min_value=0.0, step=0.1, value=3.0)
     n_barre = st.number_input("Numero di barre tese (n_barre) [-]", min_value=0.0, step=0.1, value=3.0)
     HA = st.number_input("Diametro barre (HA) [mm]", min_value=0.0, step=0.1, value=3.0)
-    A_s = n_barre * (2 * HA**2) / (4 * 100)
+    A_s = n_barre * (math.pi * HA**2) / (4 * 100)
     st.latex(r"A_s = n_{barre} \cdot \frac{\pi \cdot \phi^2}{4 \cdot 100}")
     st.latex(f"{n_barre} \\cdot \\frac{{\\pi \\cdot {HA:.1f}^2}}{{4 \\cdot 100}}")
 
